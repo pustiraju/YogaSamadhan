@@ -3,7 +3,7 @@ const app = express();
 const path = require('path');
 
 // Serve static files from "public" folder
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static('public'));
 
 // Serve index.html from views folder
 app.get('/', (req, res) => {
